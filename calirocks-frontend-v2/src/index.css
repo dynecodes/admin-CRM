@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.multiselect-white button {
+  background-color: white !important;
+}
+
+/* Rich Text Message Styling */
+.rich-text-message {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.rich-text-message strong,
+.rich-text-message b {
+  font-weight: bold;
+}
+
+.rich-text-message em,
+.rich-text-message i {
+  font-style: italic;
+}
+
+.rich-text-message u {
+  text-decoration: underline;
+}
+
+.rich-text-message s {
+  text-decoration: line-through;
+}
+
+.rich-text-message a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+.rich-text-message a:hover {
+  color: #2563eb;
+}
+
+.dark .rich-text-message a {
+  color: #60a5fa;
+}
+
+.dark .rich-text-message a:hover {
+  color: #93c5fd;
+}
+
+.rich-text-message p {
+  margin: 0;
+}
+
+.rich-text-message br {
+  display: block;
+  margin: 0;
+}
